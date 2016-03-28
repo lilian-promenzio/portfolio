@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "description": "My personal portfolio.",
+  "main": "index.js",
+  "authors": [
+    "Lilian Promenzio"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "lilian",
+    "promenzio",
+    "portfolio"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lesshat": "^3.0.2",
+    "jquery": "^2.2.2",
+    "bootstrap": "^3.3.6"
+  }
+}
