@@ -19,7 +19,7 @@ gulp.task('less', function () {
 	
 	const bower = path.resolve( 'bower_components' );
 	return gulp
-			.src('www/less/**/*.less')
+			.src(['www/less/**/*.less', 'www/**/*.less'])
 			.pipe(less({
 				paths: [ path.join( bower, 'lesshat/build' ) ]
 			}))
