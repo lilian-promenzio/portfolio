@@ -1,41 +1,50 @@
 <!doctype html>
 <html lang="pt-br">
 	<head>
-		<meta charset="UTF-8"/>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Lilian Promenzio</title>
 		<link rel="shortcut icon" href="/assets/img/favicon.ico"/>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    	<link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet"/>
 		<link href="css/index.css" rel="stylesheet"/>
-	</head>
+	</head> 
 	<body>
-		<div class="nav-menu">
-			<div class="menu-wrap">
-				<div class="brand">
-					Lilian Promenzio
+		
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#main">
+						Lilian Promenzio
+					</a>
 				</div>
-				<div class="menu">
-					<div class="menu-item">
-						<a href="#main">Main</a>
-					</div>
-					<div class="menu-item">
-						<a href="#portfolio">Portfolio</a>
-					</div>
-					<div class="menu-item">
-						<a href="#profile">Perfil</a>
-					</div>
-					<div class="menu-item">
-						<a href="#contact">Contact</a>
-					</div>
+				
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#main">Main</a></li>
+						<li><a href="#portfolio">Portfólio</a></li>
+						<li class="active"><a href="#profile">Perfil</a></a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
 				</div>
-			</div>
-		</div>
-		<div class="page-wrap">
+				
+			</div>			
+		</nav>
+		
+		<div class="container-fluid">
 			<div id="main" class="slide">
-				<div class="slide-wrap">
-					<div class="title">Hi :)</div>
+				<div class="title">
+					<div>Hi :)</div>
+				</div>
+				<div class="subtitle">					
 					<div class="name">Lilian Promenzio</div>
 					<div class="descr">front-end web developer</div>
 				</div>
