@@ -29,7 +29,7 @@ html, body {
 	.align-items(center);
 	
 	width: 100%;
-	padding: 50px 0;
+	padding: 60px 0 30px;
 
 	// MAIN
 	
@@ -47,7 +47,7 @@ html, body {
 			.display(flex);
 			.flex-direction(row);
 			.align-items(center);
-			.calc(height, ~'100% - 160px');
+			.calc(height, ~'100% - 180px');
 		
 			font-size: 120px;
 			
@@ -59,6 +59,27 @@ html, body {
 			
 			.name { font-size: 40px; }
 			.descr { font-size: 20px; }
+			
+		}
+		
+		.start-btn {
+			
+			display: inline-block;
+			width: 60px;
+			height: 60px;
+			margin-top: 50px;
+			border-radius: 50%;
+			.transition(box-shadow 0.2s linear);
+			
+			&:hover { .box-shadow(0 0 10px rgb(255,153,0)); }
+			
+			img {
+				
+				width: 60px;
+				height: 60px;
+			
+				
+			}
 			
 		}
 		
