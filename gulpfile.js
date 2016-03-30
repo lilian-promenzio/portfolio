@@ -53,11 +53,11 @@ gulp.task( 'vendor', function( ) {
 
 gulp.task('watch', function() {
 	
-	gulp.watch('www/less/**/*.less', function() {
+	gulp.watch('www/**/*.less', function() {
 		gulp.run('less');
 	});
 	
-	gulp.watch('www/js/**/*.js', function() {
+	gulp.watch('www/**/*.js', function() {
 		gulp.run('js');
 	});
 	
