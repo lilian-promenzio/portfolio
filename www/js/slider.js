@@ -2,6 +2,7 @@ var setSlider = function(sliderID){
 	
 	$('#' + sliderID).lightSlider({
 		item: 4,
+		autoWidth: true,
 		keyPress: true,
 		loop: true,
 		slideMove: 2,
