@@ -27,6 +27,7 @@ html, body {
 	
 	.display(flex);
 	.align-items(center);
+	.justify-content(center);
 	
 	width: 100%;
 	padding: 60px 0 30px;
@@ -88,10 +89,31 @@ html, body {
 	// PORTFOLIO
 	&#portfolio {
 	
-		height: 600px;
+		.flex-direction(column);
 		background-color: #fff;
 	
+		h3 {
+			
+			text-align: center;
+			color: #333;
+			
+		}
+	
 	}
+	
+}
+
+/* Extra-small devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+	
+	&#portfolio { height: 100vh; }
+	
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	
+	&#portfolio { height: 480px; }
 	
 }
 
