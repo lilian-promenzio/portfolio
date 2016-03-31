@@ -1,0 +1,10 @@
+#BOWER E NODE
+bower_components/
+
+#tempfiles
+*~
+.\#*
+\#*
+/build/
+/build
+/build.*
