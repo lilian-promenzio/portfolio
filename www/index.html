@@ -7,7 +7,8 @@
 		<title>Lilian Promenzio</title>
 		<link rel="shortcut icon" href="/assets/img/favicon.ico"/>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-		<link href="css/bootstrap.css" rel="stylesheet"/>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<link href="vendor/lightslider/dist/css/lightslider.min.css" rel='stylesheet' type='text/css' />
 		<link href="css/index.css" rel="stylesheet"/>
 	</head> 
 	<body>
@@ -53,9 +54,16 @@
 				</a>
 			</div>
 			<div id="portfolio" class="slide">
-				<div class="slide-wrap">
-					portfolio
-				</div>
+				<ul id="lightSlider">
+					<li>
+						<h3>First Slide</h3>
+						<p>Lorem ipsum Cupidatat quis pariatur anim.</p>
+					</li>
+					<li>
+						<h3>Second Slide</h3>
+						<p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+					</li>
+				</ul>
 			</div>
 			<div id="profile" class="slide">
 				<div class="slide-wrap">
@@ -74,5 +82,11 @@
 		
 		<script src="vendor/jquery/dist/jquery.min.js"></script>
 		<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="vendor/lightslider/dist/js/lightslider.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#lightSlider").lightSlider(); 
+			});
+		</script>
 	</body>
 </html>
