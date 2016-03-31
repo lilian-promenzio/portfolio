@@ -30,7 +30,11 @@ var setSlider = function(sliderID){
 					slideMove: 1
 					}
 			}
-		]
+		],
+		
+        onSliderLoad: function() {
+            $('#' + sliderID).removeClass('cs-hidden');
+        } 
 	});
 	
 }
