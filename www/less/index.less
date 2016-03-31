@@ -70,9 +70,10 @@ html, body {
 			height: 60px;
 			margin-top: 50px;
 			border-radius: 50%;
-			.transition(box-shadow 0.2s linear);
+			.opacity(0.5);
+			.transition(opacity, 0.2s linear);
 			
-			&:hover { .box-shadow(0 0 10px rgb(255,153,0)); }
+			&:hover { .opacity(1); }
 			
 			img {
 				
