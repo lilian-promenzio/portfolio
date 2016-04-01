@@ -129,7 +129,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="about" class="slide">
+			<div id="about" class="slide scrollme">
 				<div class="content">
 					<div class="hidden-sm hidden-md hidden-lg row">
 						<div class="col-xs-12 col-sm-3 text-center">
@@ -149,7 +149,16 @@
 					</div>
 					<div class="hidden-xs row row-eq-height">
 						<div class="col-xs-12 col-sm-3 text-center">
-							<div class="profile-img">&nbsp;</div>
+							<div class="profile-img animateme"
+								data-from="0.5"
+								data-to="0"
+								data-opacity="0"
+								data-translatex="-800"
+								data-rotatex="-90"
+								data-rotatey="90"
+								data-rotatez="-90"
+								data-easing="easeout"
+								>&nbsp;</div>
 						</div>
 						<div class="col-xs-12 col-sm-9 rowDescr">
 							<div class="descr">
@@ -257,19 +266,37 @@
 					</div>
 				</div>
 			</div>
-			<div id="contact" class="slide">
+			<div id="contact" class="slide scrollme">
 				<div class="slide-wrap">
 					<address>
 						<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> São Paulo, SP - Brasil<br>
 						<a href="mailto:lilian.promenzio@gmail.com">lilian.promenzio@gmail.com</a>
 					</address>
-					<a href="https://www.facebook.com/lilian.promenzio" target="_blank" class="social">
+					<a href="https://www.facebook.com/lilian.promenzio"
+						target="_blank"
+						class="social animateme"
+						data-when="view"
+						data-from="1"
+						data-to="0.9"
+						data-scale="0">
 						<img src="assets/icons/facebook.svg" alt="Facebook">
 					</a>
-					<a href="https://github.com/lilian-promenzio/" target="_blank" class="social">
+					<a href="https://github.com/lilian-promenzio/"
+						target="_blank"
+						class="social animateme"
+						data-when="view"
+						data-from="1"
+						data-to="0.9"
+						data-scale="0">
 						<img src="assets/icons/git.svg" alt="GitHub">
 					</a>
-					<a href="https://www.linkedin.com/in/lilian-promenzio-63730229?trk=nav_responsive_tab_profile" target="_blank" class="social">
+					<a href="https://www.linkedin.com/in/lilian-promenzio-63730229?trk=nav_responsive_tab_profile"
+						target="_blank"
+						class="social animateme"
+						data-when="view"
+						data-from="1"
+						data-to="0.9"
+						data-scale="0">
 						<img src="assets/icons/linkedin.svg" alt="LinkedIn">
 					</a>
 				</div>
@@ -278,12 +305,19 @@
 		
 		<script src="vendor/jquery/dist/jquery.min.js"></script>
 		<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="vendor/scrollme/jquery.scrollme.min.js"></script>
 		<script src="vendor/lightslider/dist/js/lightslider.min.js"></script>
 		<script src="js/slider.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				
 				setSlider('content-slider');
+				
+				 var loc = window.location.pathname;
+
+				$('#navbar').find('a').each(function() {
+					$(this).toggleClass('active', $(this).attr('href') == loc);
+				});
 				
 			});
 		</script>
