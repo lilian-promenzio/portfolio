@@ -33,7 +33,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#main">Main</a></li>
 						<li><a href="#portfolio">Portfólio</a></li>
-						<li class="active"><a href="#about">Sobre mim</a></a></li>
+						<li><a href="#about">Sobre mim</a></a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
@@ -313,11 +313,28 @@
 				
 				setSlider('content-slider');
 				
-				 var loc = window.location.pathname;
+				// Scroll to hash animation
 
-				$('#navbar').find('a').each(function() {
-					$(this).toggleClass('active', $(this).attr('href') == loc);
+				$( function()
+				{
+					$( 'a[href*="#"]:not([href="#"])' ).click( function()
+					{
+						if( location.pathname.replace( /^\// , '' ) == this.pathname.replace( /^\// , '' ) && location.hostname == this.hostname )
+						{
+							var target = $( this.hash );
+							target = target.length ? target : $( '[name='+this.hash.slice( 1 )+']' );
+							if( target.length )
+							{
+								$( 'html,body' ).stop().animate(
+								{
+									scrollTop:target.offset().top - 120
+								} , 1000 );
+								return false;
+							}
+						}
+					});
 				});
+
 				
 			});
 		</script>
