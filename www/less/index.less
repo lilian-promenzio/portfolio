@@ -30,7 +30,7 @@ html, body {
 	.justify-content(center);
 	
 	width: 100%;
-	padding: 60px 0 30px;
+	padding: 60px 5px 30px;
 
 	// MAIN
 	
@@ -105,29 +105,77 @@ html, body {
 	// SOBRE
 	&#about {
 	
-		height: 600px;
+		.flex-direction(column);
+		min-height: 500px;
 		text-align: center;
-		background-color: #222;
-
-		.profile-img {
-			
-			display: inline-block;
-			width: 120px;
-			height: 120px;
-			margin: 20px auto 10px;
-			border-radius: 50%;
-			background: url(/assets/img/profile.jpg) center no-repeat;
-			background-size: cover;
-			-webkit-box-shadow: 0 0 10px 0px rgba(50, 50, 50, 0.75);
-			-moz-box-shadow:    0 0 10px 0px rgba(50, 50, 50, 0.75);
-			box-shadow:         0 0 10px 0px rgba(50, 50, 50, 0.75);
-			
-		}
+		background-color: #fff;
+		color: #333;
+		font-size: 16px;
+		text-align: left;
 		
-		.descr {
+		.content {
 			
-			margin: 0 auto;
-			overflow: hidden;
+			max-width: 800px;
+					
+			.rowDescr {
+				
+				.display(flex);
+				.flex-direction(column);
+				.align-items(center);
+				.justify-content(center);
+				
+			}
+	
+			.profile-img {
+				
+				display: inline-block;
+				width: 120px;
+				height: 120px;
+				border-radius: 50%;
+				background: url(/assets/img/profile.jpg) center no-repeat;
+				background-size: cover;
+				-webkit-box-shadow: 0 0 10px 0px rgba(50, 50, 50, 0.75);
+				-moz-box-shadow:    0 0 10px 0px rgba(50, 50, 50, 0.75);
+				box-shadow:         0 0 10px 0px rgba(50, 50, 50, 0.75);
+				
+			}
+			
+			.descr {
+				
+				margin: 0 auto;
+				overflow: hidden;
+				
+			}
+			
+			.rowSkills {
+				
+				margin-top: 20px;
+				
+				.skillsTitle {
+					
+					height: 260px;
+					line-height: 260px;
+					font-size: 32px;
+					font-weight: bold;
+					
+				}
+				
+				.skills {
+				
+					.flex-direction(row);
+					margin: 15px 10px;
+					font-size: 14px;
+					
+					.icon {
+						
+						width: 48px;
+						vertical-align: middle;
+						
+					}
+					
+				}
+				
+			}
 			
 		}
 	
@@ -140,12 +188,25 @@ html, body {
 	
 	&#portfolio { height: 100vh; }
 	
+	&#about .content .rowSkills .skills {
+		
+		text-align: center;		
+		.icon { margin-right: 0; }
+		
+	}
+	
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	
 	&#portfolio { height: 480px; }
+	
+	&#about .content .rowSkills .skills {
+				
+		.icon { margin-right: 10px; }
+		
+	}
 	
 }
 
