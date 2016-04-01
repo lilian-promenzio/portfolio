@@ -174,11 +174,7 @@ html, body {
 						vertical-align: middle;
 						.transition(.2s ease-out);
 						
-						&:hover, &:active {
-							
-							.transform(scale(1.5));
-							
-						}
+						&:hover, &:active { .transform(scale(1.5)); }
 						
 					}
 					
@@ -188,6 +184,34 @@ html, body {
 			
 		}
 	
+	}
+	
+	// CONTACT
+	&#contact {
+	
+		height: 200px;
+		text-align: center;
+		background-color: #f90;
+		
+		a {
+			
+			color: #fff;
+			font-weight: bold;
+			
+			&.social {
+				
+				display: inline-block;
+				width: 32px;
+				height: 32px;
+				margin: 0 5px;
+				.transition(.2s ease-out);
+				
+				&:hover, &:active { .transform(scale(1.5)); }
+				
+			}
+			
+		}
+		
 	}
 	
 }
@@ -216,18 +240,5 @@ html, body {
 		.icon { margin-right: 10px; }
 		
 	}
-	
-}
-
-/*
-*
-*	CONTACT
-*
-*/
-
-#contact {
-	
-	height: 400px;
-	background-color: #f90;
 	
 }
